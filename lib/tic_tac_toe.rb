@@ -92,6 +92,7 @@ def play(board)
        puts "draw?(board)"
      else
        turn(board)
+     end
    end
 end
 
