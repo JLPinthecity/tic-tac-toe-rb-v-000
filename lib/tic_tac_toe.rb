@@ -57,5 +57,6 @@ def current_player(board)
 end
 
 def won?(board)
-
+ WIN_COMBINATIONS.select do |row|
+   board[0] == board[1] && board[2] == board[3]
 end
