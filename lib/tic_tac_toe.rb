@@ -45,3 +45,15 @@ def turn(board)
       turn
     end
 end
+
+def turn_count(board)
+  board.count do 
+    |token| token == "X" || token == "O"
+  end
+end
+
+def current_player(board)
+
+
+end
+  
