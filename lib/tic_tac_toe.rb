@@ -58,8 +58,8 @@ end
 
 def won?(board)
  WIN_COMBINATIONS.select do |row|
-   board[0] == board[1] &&
-   board[2] == board[3] &&
-   position_taken?(board[0])
+   board[row[0]] == board[row[1]] &&
+   board[row[2]] == board[row[3] &&
+   position_taken?(board[row[0]])
  end
 end
