@@ -57,7 +57,7 @@ def current_player(board)
 end
 
 def won?(board)
- WIN_COMBINATIONS.select do |row|
+ WIN_COMBINATIONS.detect do |row|
    board[row[0]] == board[row[1]] &&
    board[row[1]] == board[row[2]] &&
    position_taken?(board[row[0]])
